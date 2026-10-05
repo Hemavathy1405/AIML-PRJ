@@ -1,0 +1,122 @@
+[
+  {
+    "chunk_id": "bio_01",
+    "question": "How does the CRISPR-Cas9 system identify its DNA target and create genomic edits?",
+    "factual": "CRISPR-Cas9 uses a single guide RNA containing a 20-nucleotide sequence that matches the target genomic locus directly adjacent to a PAM sequence, typically 5'-NGG-3'. The Cas9 endonuclease generates double-strand breaks, which are subsequently resolved by cellular repair mechanisms like NHEJ or HDR.",
+    "partial": "CRISPR-Cas9 recognizes genomic targets using a guide RNA and cuts the DNA adjacent to a PAM motif. It also actively repairs the DNA strand itself using an intrinsic polymerase sub-domain before releasing the cleaved sequence.",
+    "hallucinated": "CRISPR-Cas9 relies on magnetic nanoparticle resonance to locate target chromatin fibers without requiring guide RNAs or PAM motifs. Once located, it vaporizes the entire chromosome via infrared thermal decay.",
+    "hallucinated_taxonomy": "Unfounded Fabrication (Entirely Invented Fact)"
+  },
+  {
+    "chunk_id": "bio_02",
+    "question": "What is the biological mechanism of action for mRNA vaccines?",
+    "factual": "mRNA vaccines encapsulate synthetic nucleoside-modified mRNA inside lipid nanoparticles to enter host cells, directing ribosomes to produce the prefusion stabilized spike glycoprotein and triggering immune responses.",
+    "partial": "mRNA vaccines deliver genetic instructions in lipid nanoparticles to produce spike proteins. However, the synthetic mRNA permanently integrates into host genomic DNA inside the nucleus within 48 hours.",
+    "hallucinated": "mRNA vaccines contain live-attenuated bacterial spores that replicate inside red blood cells to produce antibody crystals that circulate perpetually in the bloodstream.",
+    "hallucinated_taxonomy": "Factual Error (Wrong Entity/Number/Date)"
+  },
+  {
+    "chunk_id": "cs_01",
+    "question": "Why did the Transformer architecture replace recurrence, and what is its computational complexity?",
+    "factual": "The Transformer replaced recurrence with multi-head self-attention, enabling parallel computation across all sequence tokens, but standard self-attention has O(N^2) complexity with respect to sequence length N.",
+    "partial": "The Transformer uses self-attention instead of recurrence to achieve O(1) sequential steps. It achieves linear O(N) memory complexity across all vanilla self-attention implementations without approximation.",
+    "hallucinated": "Transformers rely on bi-directional Markov decision trees that execute sequentially across recurrent hidden states, requiring exactly O(2^N) exponential time complexity to parse text.",
+    "hallucinated_taxonomy": "Contradiction to Evidence"
+  },
+  {
+    "chunk_id": "cs_02",
+    "question": "How does the Raft consensus algorithm handle leader election and node failures?",
+    "factual": "In Raft, if a follower node ceases to receive heartbeat signals within an election timeout, it transitions to candidate state, increments its term, and requests votes from peers to elect a new leader.",
+    "partial": "Raft uses randomized election timeouts to trigger leader elections when heartbeats fail. If a split vote occurs, the algorithm immediately terminates all nodes and reboots the physical hardware servers.",
+    "hallucinated": "Raft achieves consensus without leader election by requiring all distributed nodes to broadcast quantum telemetry to a centralized NASA master clock every 10 microseconds.",
+    "hallucinated_taxonomy": "Unfounded Fabrication (Entirely Invented Fact)"
+  },
+  {
+    "chunk_id": "astro_01",
+    "question": "Where is the James Webb Space Telescope positioned and how is its primary mirror constructed?",
+    "factual": "JWST is positioned at the Sun-Earth L2 Lagrange point roughly 1.5 million kilometers from Earth and features a 6.5-meter primary mirror made of 18 gold-coated hexagonal beryllium segments.",
+    "partial": "JWST is located at L2 Lagrange point with an 18-segment beryllium mirror, but it operates primarily in ultraviolet wavelengths below 0.1 micrometers and is cooled using liquid hydrogen thrusters.",
+    "hallucinated": "The James Webb Space Telescope orbits Earth in Low Earth Orbit at 400 km altitude and carries a monolithic 20-meter glass mirror manufactured by Galileo Galilei in Florence.",
+    "hallucinated_taxonomy": "Factual Error (Wrong Entity/Number/Date)"
+  },
+  {
+    "chunk_id": "astro_02",
+    "question": "How did the Event Horizon Telescope capture the image of the M87* black hole?",
+    "factual": "The EHT used Very Long Baseline Interferometry at 1.3 mm wavelength with atomic-clock synchronized radio observatories worldwide to create an Earth-sized virtual aperture.",
+    "partial": "The EHT used VLBI with synchronized atomic clocks across international radio observatories, but the final image was captured using visible light optical lenses mounted on orbital cubesats.",
+    "hallucinated": "The EHT sent a robotic probe directly inside the event horizon of M87* which transmitted high-resolution 4K optical camera footage back to Earth over submarine fiber cables.",
+    "hallucinated_taxonomy": "Unfounded Fabrication (Entirely Invented Fact)"
+  },
+  {
+    "chunk_id": "phys_01",
+    "question": "What is the physical significance of Bell inequalities in quantum mechanics?",
+    "factual": "Bell inequalities establish an upper bound on statistical correlations for any local hidden variable theory, and their experimental violation confirms that quantum entanglement cannot be explained by local realism.",
+    "partial": "Bell inequalities show the bounds of local realism. However, Aspect's experiments in 2022 conclusively proved that Einstein's local hidden variables are completely correct and quantum entanglement is an illusion.",
+    "hallucinated": "Bell inequalities are thermodynamic equations proving that energy can be freely created from nothing whenever two electrons bounce off a vacuum chamber wall.",
+    "hallucinated_taxonomy": "Contradiction to Evidence"
+  },
+  {
+    "chunk_id": "env_01",
+    "question": "What chemical reactions occur when excess atmospheric CO2 dissolves into ocean waters?",
+    "factual": "Dissolved CO2 forms carbonic acid, which dissociates into hydrogen and bicarbonate ions; the extra hydrogen ions consume carbonate ions, reducing the saturation state needed for calcifying marine life.",
+    "partial": "CO2 dissolves into seawater to form carbonic acid which decreases pH. This chemical process miraculously fortifies coral skeletons by increasing carbonate ion availability tenfold.",
+    "hallucinated": "Atmospheric CO2 dissolution converts ocean water into pure sulfur trioxide, completely boiling the world's oceans and causing the seas to turn into solid granite by 2030.",
+    "hallucinated_taxonomy": "Reasoning / Logic Error"
+  },
+  {
+    "chunk_id": "hist_01",
+    "question": "What three scripts are inscribed on the Rosetta Stone and who deciphered them?",
+    "factual": "The Rosetta Stone features Egyptian hieroglyphs, Egyptian Demotic script, and Ancient Greek, and its hieroglyphic script was successfully deciphered by Jean-Fran\u00e7ois Champollion in 1822.",
+    "partial": "The Rosetta Stone was written in Ancient Greek, Demotic, and Egyptian hieroglyphs. It was discovered by Napoleon himself in 1945 during the German occupation of Cairo.",
+    "hallucinated": "The Rosetta Stone contains Sumerian cuneiform, binary code, and modern Spanish, and was translated by William Shakespeare in 1605 using an electronic typewriter.",
+    "hallucinated_taxonomy": "Factual Error (Wrong Entity/Number/Date)"
+  },
+  {
+    "chunk_id": "fin_01",
+    "question": "What capital and liquidity requirements were established under the Basel III framework?",
+    "factual": "Basel III requires banks to hold Common Equity Tier 1 (CET1) of at least 4.5% of risk-weighted assets plus a 2.5% conservation buffer, along with a 30-day Liquidity Coverage Ratio.",
+    "partial": "Basel III mandates a CET1 ratio of 4.5% and a capital conservation buffer, but it completely eliminated all liquidity oversight and allows banks to operate with zero cash reserves.",
+    "hallucinated": "Basel III abolished paper money worldwide and decreed that all international debt must be denominated exclusively in unregulated speculative doge-tokens without capital reserves.",
+    "hallucinated_taxonomy": "Unfounded Fabrication (Entirely Invented Fact)"
+  },
+  {
+    "chunk_id": "cs_03",
+    "question": "What does zk-SNARK stand for and what are its key mathematical properties?",
+    "factual": "zk-SNARK stands for Zero-Knowledge Succinct Non-Interactive Argument of Knowledge, generating tiny cryptographic proofs verifiable in milliseconds without revealing the prover's secret.",
+    "partial": "zk-SNARKs produce succinct proofs without revealing secret data, but they require the verifier to download the entire multi-gigabyte secret key database before checking any single statement.",
+    "hallucinated": "zk-SNARK stands for Zero Kinetic Sonic Nuclear Aerial Rocket Kinetic, which is a jet engine turbine system that compresses air using blockchain token combustion.",
+    "hallucinated_taxonomy": "Factual Error (Wrong Entity/Number/Date)"
+  },
+  {
+    "chunk_id": "bio_03",
+    "question": "According to the amyloid cascade hypothesis, how do Abeta peptides trigger neurodegeneration?",
+    "factual": "Abeta peptides cleaved from APP oligomerize into plaques in brain parenchyma, inducing hyperphosphorylation of tau protein into tangles that disrupt synapses and cause neurodegeneration.",
+    "partial": "Abeta peptides accumulate into brain plaques. However, the hypothesis states that amyloid plaques actually regenerate brain tissue and reverse memory loss in late-stage dementia patients.",
+    "hallucinated": "Alzheimer's is caused exclusively by microscopic silicon microchips injected by dental fillings that emit high-frequency ultrasonic static into the cerebral spinal fluid.",
+    "hallucinated_taxonomy": "Unfounded Fabrication (Entirely Invented Fact)"
+  },
+  {
+    "chunk_id": "phys_02",
+    "question": "What is the Meissner effect and what microscopic mechanism explains BCS superconductivity?",
+    "factual": "The Meissner effect is the complete expulsion of magnetic flux fields from a superconductor, explained in BCS theory by electrons forming bound Cooper pairs via lattice phonon interactions below Tc.",
+    "partial": "The Meissner effect expels magnetic fields below a critical temperature. In BCS theory, this occurs because electrons fuse into radioactive uranium atoms inside the lattice structure.",
+    "hallucinated": "The Meissner effect causes superconductors to burst into spontaneous combustion whenever a magnet approaches, proving that electricity does not exist at low temperatures.",
+    "hallucinated_taxonomy": "Contradiction to Evidence"
+  },
+  {
+    "chunk_id": "hist_02",
+    "question": "Who led the Manhattan Project and where was the first nuclear test conducted?",
+    "factual": "The Manhattan Project was led by Leslie Groves and J. Robert Oppenheimer, and the first nuclear detonation (the Trinity test) was conducted in the desert near Alamogordo, New Mexico on July 16, 1945.",
+    "partial": "Leslie Groves and J. Robert Oppenheimer led the Manhattan Project in New Mexico. However, the Trinity test device was a solar-powered fusion engine that caused zero blast wave or radiation.",
+    "hallucinated": "The Manhattan Project was an architectural project directed by Leonardo da Vinci in 1812 to construct high-rise skyscrapers in downtown Manhattan using titanium alloy.",
+    "hallucinated_taxonomy": "Factual Error (Wrong Entity/Number/Date)"
+  },
+  {
+    "chunk_id": "env_02",
+    "question": "How do CFCs destroy stratospheric ozone and what international treaty addressed this issue?",
+    "factual": "Solar UV radiation photolyzes CFCs to release free chlorine radicals that catalytically destroy ozone molecules; the 1987 Montreal Protocol mandated the phaseout of CFC production.",
+    "partial": "CFCs release chlorine atoms that destroy ozone molecules, but the Montreal Protocol mandated that global industries increase CFC manufacturing by 500% to fill the ozone hole.",
+    "hallucinated": "Ozone depletion is caused by high-altitude flying eagles flapping their wings too fast, which was outlawed by the United Nations Geneva Convention in 1492.",
+    "hallucinated_taxonomy": "Unfounded Fabrication (Entirely Invented Fact)"
+  }
+]

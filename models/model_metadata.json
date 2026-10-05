@@ -1,0 +1,31 @@
+{
+  "primary_model": "XGBoost",
+  "baselines": [
+    "Random Forest",
+    "SVM",
+    "Logistic Regression"
+  ],
+  "features": [
+    "semantic_consistency",
+    "evidence_support",
+    "contradiction_score",
+    "response_uncertainty",
+    "claim_evidence_gap",
+    "confidence_factuality_gap",
+    "semantic_evidence_interaction"
+  ],
+  "feature_importances": {
+    "semantic_consistency": 0.02,
+    "evidence_support": 0.1812,
+    "contradiction_score": 0.0193,
+    "response_uncertainty": 0.2255,
+    "claim_evidence_gap": 0.1082,
+    "confidence_factuality_gap": 0.2114,
+    "semantic_evidence_interaction": 0.2344
+  },
+  "classes": [
+    "LOW",
+    "MEDIUM",
+    "HIGH"
+  ]
+}

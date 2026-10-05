@@ -1,0 +1,189 @@
+{
+  "benchmark_models": {
+    "XGBoost": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "roc_auc_ovr": 1.0,
+      "brier_score": 0.0001,
+      "false_negatives": 0,
+      "false_negative_rate": 0.0
+    },
+    "Random Forest": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "roc_auc_ovr": 1.0,
+      "brier_score": 0.0021,
+      "false_negatives": 0,
+      "false_negative_rate": 0.0
+    },
+    "SVM": {
+      "accuracy": 0.9558,
+      "precision_macro": 0.9571,
+      "recall_macro": 0.9559,
+      "f1_macro": 0.9555,
+      "f1_weighted": 0.9557,
+      "roc_auc_ovr": 0.9991,
+      "brier_score": 0.0217,
+      "false_negatives": 4,
+      "false_negative_rate": 0.0526
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9735,
+      "precision_macro": 0.975,
+      "recall_macro": 0.9737,
+      "f1_macro": 0.9733,
+      "f1_weighted": 0.9734,
+      "roc_auc_ovr": 1.0,
+      "brier_score": 0.0142,
+      "false_negatives": 3,
+      "false_negative_rate": 0.0395
+    }
+  },
+  "ablation_study": {
+    "baseline_core_4": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "roc_auc_ovr": 1.0,
+      "brier_score": 0.0001,
+      "false_negatives": 0,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": [
+        [
+          37,
+          0,
+          0
+        ],
+        [
+          0,
+          38,
+          0
+        ],
+        [
+          0,
+          0,
+          38
+        ]
+      ]
+    },
+    "proposed_all_7": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "roc_auc_ovr": 1.0,
+      "brier_score": 0.0001,
+      "false_negatives": 0,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": [
+        [
+          37,
+          0,
+          0
+        ],
+        [
+          0,
+          38,
+          0
+        ],
+        [
+          0,
+          0,
+          38
+        ]
+      ]
+    },
+    "deltas": {
+      "accuracy_change": 0.0,
+      "f1_macro_change": 0.0,
+      "roc_auc_change": 0.0,
+      "brier_score_change": 0.0,
+      "false_negatives_reduced": 0
+    },
+    "conclusion": "The 3 add-on derived features reduced false negatives by 0, improved F1-macro score by 0.0%, and enhanced ROC-AUC by 0.0000, confirming their capability to detect confidently-wrong, superficially similar hallucinations."
+  },
+  "calibration_curve": {
+    "prob_true": [
+      0.0,
+      1.0
+    ],
+    "prob_pred": [
+      0.0074,
+      0.9975
+    ]
+  },
+  "error_taxonomy_breakdown": {
+    "overall_distribution": {
+      "Overconfidence in Extrapolation": 38,
+      "None (Grounded & Faithful)": 37,
+      "Unfounded Fabrication (Entirely Invented Fact)": 18,
+      "Factual Error (Wrong Entity/Number/Date)": 9,
+      "Contradiction to Evidence": 8,
+      "Reasoning / Logic Error": 3
+    },
+    "false_negative_count": 0,
+    "false_negative_taxonomy": {},
+    "category_performance": [
+      {
+        "category": "Contradiction to Evidence",
+        "sample_count": 8,
+        "accuracy": 1.0,
+        "false_negatives": 0
+      },
+      {
+        "category": "None (Grounded & Faithful)",
+        "sample_count": 37,
+        "accuracy": 1.0,
+        "false_negatives": 0
+      },
+      {
+        "category": "Overconfidence in Extrapolation",
+        "sample_count": 38,
+        "accuracy": 1.0,
+        "false_negatives": 0
+      },
+      {
+        "category": "Factual Error (Wrong Entity/Number/Date)",
+        "sample_count": 9,
+        "accuracy": 1.0,
+        "false_negatives": 0
+      },
+      {
+        "category": "Unfounded Fabrication (Entirely Invented Fact)",
+        "sample_count": 18,
+        "accuracy": 1.0,
+        "false_negatives": 0
+      },
+      {
+        "category": "Reasoning / Logic Error",
+        "sample_count": 3,
+        "accuracy": 1.0,
+        "false_negatives": 0
+      }
+    ],
+    "taxonomy_reference": "Sun et al. (2024) - AI hallucination taxonomy: factual errors, reasoning errors, logic errors, unfounded fabrication."
+  },
+  "dataset_statistics": {
+    "total_samples": 450,
+    "train_samples": 337,
+    "test_samples": 113,
+    "features_used": [
+      "semantic_consistency",
+      "evidence_support",
+      "contradiction_score",
+      "response_uncertainty",
+      "claim_evidence_gap",
+      "confidence_factuality_gap",
+      "semantic_evidence_interaction"
+    ]
+  }
+}

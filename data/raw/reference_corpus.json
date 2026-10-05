@@ -1,0 +1,92 @@
+[
+  {
+    "chunk_id": "bio_01",
+    "title": "CRISPR-Cas9 Gene Editing Mechanism",
+    "domain": "Biomedicine",
+    "text": "CRISPR-Cas9 is a biochemical system derived from bacterial immune defenses that enables targeted RNA-guided DNA endonuclease cleavage. The Cas9 endonuclease is directed by a single guide RNA (sgRNA) containing a 20-nucleotide sequence that matches the genomic target directly adjacent to a Protospacer Adjacent Motif (PAM), typically 5'-NGG-3' in Streptococcus pyogenes. Once double-strand breaks (DSBs) are created, host cellular repair mechanisms\u2014non-homologous end joining (NHEJ) or homology-directed repair (HDR)\u2014resolve the lesion, enabling targeted knockout or gene insertion."
+  },
+  {
+    "chunk_id": "bio_02",
+    "title": "mRNA Vaccines for Viral Pathogens",
+    "domain": "Biomedicine",
+    "text": "mRNA vaccines deliver synthetic nucleoside-modified messenger RNA encapsulated in lipid nanoparticles (LNPs) to host dendritic cells and myocytes. The mRNA instructs ribosomes to synthesize the viral spike glycoprotein in its prefusion stabilized conformation, prompting both humoral neutralising antibody production and cytotoxic CD8+ T-cell responses without introducing active viral particles. The synthetic mRNA degrades naturally within host cells within several days."
+  },
+  {
+    "chunk_id": "cs_01",
+    "title": "Transformer Attention Architecture",
+    "domain": "Computer Science",
+    "text": "The Transformer architecture, introduced by Vaswani et al. in 2017, eliminates recurrent and convolutional layers in favor of stacked Multi-Head Self-Attention and position-wise Feed-Forward networks. Scaled dot-product attention computes Attention(Q, K, V) = softmax((Q K^T) / sqrt(d_k)) V. This allows parallel computation over all sequence tokens and models long-range dependencies in O(1) sequential operations, though standard self-attention has O(N^2) computational and memory complexity with respect to sequence length N."
+  },
+  {
+    "chunk_id": "cs_02",
+    "title": "RAFT Consensus Algorithm",
+    "domain": "Distributed Systems",
+    "text": "Raft is a distributed consensus algorithm designed by Ongaro and Ousterhout for state machine replication across a cluster of servers. Raft divides consensus into three modular subproblems: leader election, log replication, and safety. A cluster has at most one leader at any given term; if a leader fails or heartbeats cease within an election timeout, follower nodes transition to candidate state and request votes. Raft guarantees that committed log entries will survive any future leader election."
+  },
+  {
+    "chunk_id": "astro_01",
+    "title": "James Webb Space Telescope (JWST) Optics",
+    "domain": "Astronomy",
+    "text": "The James Webb Space Telescope (JWST) features a 6.5-meter diameter primary mirror composed of 18 hexagonal beryllium segments coated with a 100-nanometer layer of pure gold and a protective silicon dioxide overcoat. Designed primarily for infrared astronomy across wavelengths from 0.6 to 28 micrometers, JWST operates at the second Sun-Earth Lagrange point (L2), approximately 1.5 million kilometers from Earth, protected by a five-layer Kapton sunshield maintaining operating temperatures below 50 Kelvin."
+  },
+  {
+    "chunk_id": "astro_02",
+    "title": "Event Horizon Telescope Black Hole Imaging",
+    "domain": "Astronomy",
+    "text": "In April 2019, the Event Horizon Telescope (EHT) collaboration published the first direct visual evidence of a supermassive black hole at the core of the galaxy Messier 87 (M87*), followed in 2022 by Sagittarius A* in the Milky Way. Using Very Long Baseline Interferometry (VLBI) at 1.3 mm wavelength, radio telescopes across the globe synchronized using hydrogen maser atomic clocks synthesized a virtual Earth-sized telescope aperture, achieving an angular resolution of 20 micro-arcseconds."
+  },
+  {
+    "chunk_id": "phys_01",
+    "title": "Quantum Entanglement & Bell Inequalities",
+    "domain": "Physics",
+    "text": "Quantum entanglement occurs when pairs or groups of particles interact such that the quantum state of each particle cannot be described independently of the others, regardless of spatial separation. John Stewart Bell proved in 1964 that local hidden variable theories impose strict upper bounds on statistical correlations (Bell inequalities), which quantum mechanics violates. Aspect, Clauser, and Zeilinger won the 2022 Nobel Prize in Physics for loophole-free experimental confirmations of Bell violation."
+  },
+  {
+    "chunk_id": "env_01",
+    "title": "Ocean Acidification Chemistry",
+    "domain": "Environmental Science",
+    "text": "Ocean acidification is caused by marine absorption of anthropogenic atmospheric carbon dioxide (CO2). When CO2 dissolves into seawater, it forms carbonic acid (H2CO3), which dissociates into hydrogen ions (H+) and bicarbonate ions (HCO3-). The excess hydrogen ions react with carbonate ions (CO3 2-) to form further bicarbonate, thereby lowering the marine carbonate saturation state (Omega) and impairing calcium carbonate shell formation in organisms such as pteropods, corals, and shellfish."
+  },
+  {
+    "chunk_id": "hist_01",
+    "title": "The Rosetta Stone Decipherment",
+    "domain": "History & Archaeology",
+    "text": "Discovered in 1799 near the town of Rashid (Rosetta) in Egypt by French soldiers during Napoleon's expedition, the Rosetta Stone is a granodiorite stele inscribed with a decree issued at Memphis in 196 BCE on behalf of King Ptolemy V. The decree is written in three distinct scripts: Ancient Egyptian hieroglyphs (sacred script), Egyptian Demotic (administrative script), and Ancient Greek (court script). Jean-Fran\u00e7ois Champollion announced the decipherment of the hieroglyphs in 1822."
+  },
+  {
+    "chunk_id": "fin_01",
+    "title": "Basel III Banking Capital Framework",
+    "domain": "Finance & Economics",
+    "text": "Basel III is an international regulatory accord developed by the Basel Committee on Banking Supervision (BCBS) following the 2007-2008 global financial crisis. It established mandatory minimum capital adequacy ratios, requiring banks to maintain Common Equity Tier 1 (CET1) of at least 4.5% of risk-weighted assets, plus a 2.5% capital conservation buffer. Basel III also introduced the Liquidity Coverage Ratio (LCR) requiring banks to hold high-quality liquid assets sufficient to withstand a 30-day stressed outflow."
+  },
+  {
+    "chunk_id": "cs_03",
+    "title": "Zero-Knowledge Proofs (zk-SNARKs)",
+    "domain": "Cryptography",
+    "text": "A Zero-Knowledge Proof allows a prover to demonstrate to a verifier that a statement is mathematically true without disclosing any underlying secret information beyond the validity of the statement itself. zk-SNARK stands for Zero-Knowledge Succinct Non-Interactive Argument of Knowledge. They rely on pairing-friendly elliptic curves and polynomial arithmetic to produce cryptographic proofs that are only hundreds of bytes long and verifiable in milliseconds."
+  },
+  {
+    "chunk_id": "bio_03",
+    "title": "Alzheimer's Disease Amyloid Cascade Hypothesis",
+    "domain": "Biomedicine",
+    "text": "The amyloid cascade hypothesis posits that the deposition of amyloid-beta (Abeta) peptides in the brain parenchyma is the primary causative event in Alzheimer's disease pathogenesis. Abeta peptides, particularly the 42-amino acid isoform (Abeta-42), are cleaved from amyloid precursor protein (APP) by beta-secretase and gamma-secretase enzymes. Oligomerization and plaque accumulation induce hyperphosphorylation of tau protein, forming neurofibrillary tangles that trigger synaptic loss and dementia."
+  },
+  {
+    "chunk_id": "phys_02",
+    "title": "Superconductivity & Meissner Effect",
+    "domain": "Physics",
+    "text": "Superconductivity is a quantum state of matter characterized by zero electrical resistance and the complete expulsion of magnetic flux fields, an effect discovered by Walther Meissner and Robert Ochsenfeld in 1933. According to BCS theory (Bardeen-Cooper-Schrieffer), below a critical temperature (Tc), electrons overcome Coulomb repulsion via lattice phonon interactions to form bound Cooper pairs. High-temperature cuprate superconductors discovered in 1986 operate above the boiling point of liquid nitrogen (77 K)."
+  },
+  {
+    "chunk_id": "hist_02",
+    "title": "The Manhattan Project and Trinity Test",
+    "domain": "History of Science",
+    "text": "The Manhattan Project was a clandestine research and development undertaking during World War II, led by the United States with support from the United Kingdom and Canada, directed by Major General Leslie Groves and theoretical physicist J. Robert Oppenheimer at Los Alamos Laboratory. On July 16, 1945, the project conducted the first nuclear detonation, code-named the Trinity test, in the Jornada del Muerto desert near Alamogordo, New Mexico, detonating an implosion-type plutonium device known as 'The Gadget'."
+  },
+  {
+    "chunk_id": "env_02",
+    "title": "Atmospheric Ozone Depletion and Montreal Protocol",
+    "domain": "Environmental Science",
+    "text": "Stratospheric ozone depletion is primarily driven by halogenated compounds, particularly chlorofluorocarbons (CFCs) and halons. In the stratosphere, solar ultraviolet radiation photolyzes CFC molecules, releasing free chlorine radicals. A single chlorine atom can catalytically destroy more than 100,000 ozone (O3) molecules. In 1987, the international community signed the Montreal Protocol on Substances that Deplete the Ozone Layer, mandating the phaseout of CFC production, resulting in the documented recovery of the ozone layer."
+  }
+]
